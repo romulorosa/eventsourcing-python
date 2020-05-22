@@ -1,0 +1,8 @@
+{% from "_formhelper.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.aggregated_id) }}
+    {{ render_field(form.new_status) }}
+  </dl>
+  <p><input type=submit value=Update>
+</form>
